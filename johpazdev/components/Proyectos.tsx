@@ -59,12 +59,7 @@ export default function Proyectos() {
 	<section className="grid grid-cols-2 gap-4 p-4">
        
    
-	<Card
-            key={index}
-            className={`w-full max-w-[400px] relative ${
-              selectedCard === index ? styles["selected-card"] : ""
-            }`}
-          >
+	<Card className="w-full max-w-[400px] relative" >
 		<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
         <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>

@@ -5,6 +5,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/proyectos/page.js"
     ],
+    "/proyectos/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/proyectos/layout.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -15,11 +20,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/error.js"
-    ],
-    "/proyectos/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/proyectos/layout.js"
     ]
   }
 }
