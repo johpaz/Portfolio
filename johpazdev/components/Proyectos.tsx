@@ -22,9 +22,6 @@ export default function Proyectos() {
   const [selectedCard, setSelectedCard] = React.useState(null);
   
  
-  const handleClick = useCallback((index) => {
-    setSelectedCard(index);
-  }, []);
 
   const handleLikeClick = useCallback(
     (index) => {
@@ -34,20 +31,6 @@ export default function Proyectos() {
     },
     [likedStates]
   );
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (selectedCard !== null) {
-        setSelectedCard(null);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [selectedCard]);
 
   return (
     <section className="items-center">
