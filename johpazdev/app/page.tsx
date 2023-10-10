@@ -11,9 +11,9 @@ import { Divider } from "@nextui-org/divider";
 import { Skeleton } from "@nextui-org/skeleton";
 import Proyectos from "@/components/Proyectos";
 import ContactForm from "@/components/FormContact";
-import styles from '../styles/styles.css'
+import styles from '../styles/styles.module.css'
 import '../styles/animations.css'
-import { Avatar } from "@nextui-org/avatar";
+import { Avatar, AvatarGroup } from "@nextui-org/avatar";
 
 export default function Home() {
   return (
@@ -37,7 +37,6 @@ export default function Home() {
                 src="/johpazpe.jpeg"
                 />
               <h1 className={`text-center justify-center font-semibold text-teal-500 mb-2 ${subtitle()}`}>Desarrollador Full Stack</h1>
-              
             </section>
 
             {/* Sección derecha: párrafos */}
@@ -60,17 +59,42 @@ export default function Home() {
               </p>
             </section>
           </CardBody>
-
-
           <Divider />
-          <CardFooter className="flex justify-center">
+          <CardFooter className="mt-4">
+          <h1 className={`text-center justify-center font-semibold text-teal-500 mb-2 ${subtitle()}`}>Tecnologias de Desarrollo </h1>
+             <AvatarGroup>
+             <Avatar src='/icons/aws.png'/>
+              <Avatar src='/icons/bootstrap.png'/>
+              <Avatar src='/icons/java.png'/>
+              <Avatar src='/icons/kotlin.png'/>
+              <Avatar src='/icons/js.png'/>
+              <Avatar src='/icons/next.png'/>
+              <Avatar src='/icons/nextui.png'/>
+              <Avatar src='/icons/mongo.png'/>
+              <Avatar src='/icons/typescript.png'/>
+              <Avatar src='/icons/axios.png'/>
+              <Avatar src='/icons/css.png'/>
+              <Avatar src='/icons/express.png'/>
+              <Avatar src='/icons/HTML.png'/>
+              <Avatar src='/icons/node.png'/>
+              <Avatar src='/icons/postgresql.png'/>
+              <Avatar src='/icons/react.png'/>
+              <Avatar src='/icons/redux.png'/>
+              <Avatar src='/icons/sequalize.png'/>
+              <Avatar src='/icons/chakra.png'/>
+              <Avatar src='/icons/vite.png'/>
+              <Avatar src='/icons/firebase.png'/>
+             </AvatarGroup>
+          </CardFooter>
+          <Divider/>
+          <CardFooter className="justify-center padding-md">
             <Link
               isExternal
               as={NextLink}
-              className={buttonStyles({ variant: "bordered", radius: "full" })}
+              className={buttonStyles({ variant: "bordered", radius: "full" }) }
               href={siteConfig.links.discord}
             >
-              <DiscordIcon />
+              <DiscordIcon/>
             </Link>
             <Link
               isExternal

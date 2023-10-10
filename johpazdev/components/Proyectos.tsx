@@ -16,11 +16,14 @@ import { GitHubIcon, DiscordIcon } from "@/components/icons";
 import { title, subtitle } from "@/components/primitives";
 import { Divider } from "@nextui-org/divider";
 import { useEffect,useCallback } from "react";
+import styles from '../styles/styles.module.css'
+import { Avatar, AvatarGroup } from "@nextui-org/avatar";
 
 export default function Proyectos() {
 	const [likedStates, setLikedStates] = React.useState([false, false, false, false,false,false]);
-  const [selectedCard, setSelectedCard] = React.useState(null);
-  
+  const [isHovered, setIsHovered] = React.useState([false, false, false, false,false,false]);
+  const [isVideoPlaying, setIsVideoPlaying] = React.useState(false);
+    
  
 
   const handleLikeClick = useCallback(
@@ -42,12 +45,26 @@ export default function Proyectos() {
 	<section className="grid grid-cols-2 gap-4 p-4">
        
    
-	<Card className="w-full max-w-[400px] relative" >
+	<Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
 		<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
+        <p className="text-tiny uppercase font-bold">App Rick And Morty Soy Henry</p>
         <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
-		<Button
+        <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
+        <AvatarGroup className="items-justify ">        
+          <Avatar src='/icons/axios.png'/>
+          <Avatar src='/icons/css.png'/>
+          <Avatar src='/icons/express.png'/>
+          <Avatar src='/icons/HTML.png'/>
+          <Avatar src='/icons/node.png'/>
+          <Avatar src='/icons/postgresql.png'/>
+          <Avatar src='/icons/react.png'/>
+          <Avatar src='/icons/redux.png'/>
+          <Avatar src='/icons/sequalize .png'/>
+        </AvatarGroup>
+      <Button
         isIconOnly
         className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
         radius="full"
@@ -56,7 +73,7 @@ export default function Proyectos() {
 		>
         <HeartIcon
           className={likedStates[1] ? "[&>path]:stroke-transparent" : ""}
-		  fill={likedStates[1] ? "currentColor" : "none"}
+      		  fill={likedStates[1] ? "currentColor" : "none"}
         />
       </Button>
       </CardHeader>
@@ -67,7 +84,10 @@ export default function Proyectos() {
             controls
             height={400}
             width="100%"
-          >
+            autoPlay={isHovered && !isVideoPlaying} 
+            onPlay={() => setIsVideoPlaying(true)}
+            onPause={() => setIsVideoPlaying(false)}
+            >
             <source
               src="/media/video2.webm"  
               type="video/webm"
@@ -76,6 +96,7 @@ export default function Proyectos() {
           </video>
         </div>
       </CardBody>
+      
 	  <CardFooter className="flex justify-center">
             <Link
               isExternal
@@ -96,12 +117,27 @@ export default function Proyectos() {
            
           </CardFooter>
     </Card>
-   <Card className="w-full max-w-[400px] relative">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+    <Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+	      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
         <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
-		<Button
+        <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
+        
+        <AvatarGroup className="items-justify ">        
+          <Avatar src='/icons/axios.png'/>
+          <Avatar src='/icons/css.png'/>
+          <Avatar src='/icons/express.png'/>
+          <Avatar src='/icons/HTML.png'/>
+          <Avatar src='/icons/node.png'/>
+          <Avatar src='/icons/postgresql.png'/>
+          <Avatar src='/icons/react.png'/>
+          <Avatar src='/icons/redux.png'/>
+          <Avatar src='/icons/sequalize .png'/>
+        </AvatarGroup>
+      <Button
         isIconOnly
         className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
         radius="full"
@@ -150,12 +186,20 @@ export default function Proyectos() {
            
           </CardFooter>
     </Card>
-    <Card className="w-full max-w-[400px] relative">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
-        <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
-		<Button
+    <Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+	    <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">App ArtGas Monitor </p>
+        <small className="text-default-500">Desarrollo en Android Studio, disponible en playStore</small>
+        <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
+        <AvatarGroup className="items-justify ">        
+          <Avatar src='/icons/kotlin.png'/>
+          <Avatar src='/icons/java.png'/>
+        
+        </AvatarGroup>
+      <Button
         isIconOnly
         className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
         radius="full"
@@ -204,12 +248,22 @@ export default function Proyectos() {
            
           </CardFooter>
     </Card>
-	<Card className="w-full max-w-[400px] relative">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
-        <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
-		<Button
+    <Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+	      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">App Traductor Libre</p>
+        <small className="text-default-500">Desarrollo en Android Studio,disponible Apk(Voz a texto, texto a voz.)</small>
+        <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
+        
+        <AvatarGroup className="items-justify ">        
+          <Avatar src='/icons/kotlin.png'/>
+          <Avatar src='/icons/java.png'/>
+          <Avatar src='/icons/firebase.png'/>
+         
+        </AvatarGroup>
+      <Button
         isIconOnly
         className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
         radius="full"
@@ -259,12 +313,19 @@ export default function Proyectos() {
           </CardFooter>
     </Card>
 	
-	<Card className="w-full max-w-[400px] relative">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+    <Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+	      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
         <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
-		<Button
+        <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
+        <AvatarGroup className="items-justify ">        
+          <Avatar src='/icons/python.png'/>
+          <Avatar src='/icons/pygame.png'/>
+          </AvatarGroup>
+      <Button
         isIconOnly
         className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
         radius="full"
@@ -313,12 +374,29 @@ export default function Proyectos() {
            
           </CardFooter>
 	</Card>
-	<Card className="w-full max-w-[400px] relative">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
-        <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
-		<Button
+	<Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+	      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">App Juego Naves</p>  
+        <small className="text-default-500">Desarrollo en Pygame, Juego ejecutable en windows</small>
+        <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
+        <AvatarGroup className="items-justify">        
+          <Avatar src='/icons/axios.png'/>
+          <Avatar src='/icons/css.png'/>
+          <Avatar src='/icons/express.png'/>
+          <Avatar src='/icons/HTML.png'/>
+          <Avatar src='/icons/node.png'/>
+          <Avatar src='/icons/postgresql.png'/>
+          <Avatar src='/icons/react.png'/>
+          <Avatar src='/icons/redux.png'/>
+          <Avatar src='/icons/sequalize.png'/>
+          <Avatar src='/icons/chakra.png'/>
+          <Avatar src='/icons/vite.png'/>
+          <Avatar src='/icons/firebase.png'/>
+        </AvatarGroup>
+      <Button
         isIconOnly
         className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
         radius="full"
