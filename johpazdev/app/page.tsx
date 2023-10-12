@@ -4,7 +4,6 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GitHubIcon, DiscordIcon, LinkedInIcon } from "@/components/icons";
-import { Image } from "@nextui-org/image";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
 import { Divider } from "@nextui-org/divider";
@@ -14,13 +13,14 @@ import ContactForm from "@/components/FormContact";
 import styles from '../styles/styles.module.css'
 import '../styles/animations.css'
 import { Avatar, AvatarGroup } from "@nextui-org/avatar";
+import { Tooltip } from "@nextui-org/tooltip";
 
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center py-8 md:py-10">
       <Divider/>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <Card className={` card ${styles.card} max-w-[640px]`} >
+        <Card className={` card  max-w-[640px]`} >
           <Skeleton className="w-full h-full rounded-xl">
             <div className="h-5 w-3/5 rounded-lg bg-default-200"></div>
           </Skeleton>
@@ -60,34 +60,112 @@ export default function Home() {
             </section>
           </CardBody>
           <Divider />
-          <CardFooter className="mt-4">
-          <h1 className={`text-center justify-center font-semibold text-teal-500 mb-2 ${subtitle()}`}>Tecnologias de Desarrollo </h1>
-             <AvatarGroup>
-             <Avatar src='/icons/aws.png'/>
-              <Avatar src='/icons/bootstrap.png'/>
-              <Avatar src='/icons/java.png'/>
-              <Avatar src='/icons/kotlin.png'/>
-              <Avatar src='/icons/js.png'/>
-              <Avatar src='/icons/next.png'/>
-              <Avatar src='/icons/nextui.png'/>
-              <Avatar src='/icons/mongo.png'/>
-              <Avatar src='/icons/typescript.png'/>
-              <Avatar src='/icons/axios.png'/>
-              <Avatar src='/icons/css.png'/>
-              <Avatar src='/icons/express.png'/>
-              <Avatar src='/icons/HTML.png'/>
-              <Avatar src='/icons/node.png'/>
-              <Avatar src='/icons/postgresql.png'/>
-              <Avatar src='/icons/react.png'/>
-              <Avatar src='/icons/redux.png'/>
-              <Avatar src='/icons/sequalize.png'/>
-              <Avatar src='/icons/chakra.png'/>
-              <Avatar src='/icons/vite.png'/>
-              <Avatar src='/icons/firebase.png'/>
-             </AvatarGroup>
+          <CardFooter className="flex mt-4 grid grid-cols-2" >
+          <h1 className={`text-center justify-center font-semibold  mb-2 ${subtitle()}`}>Tecnologias de Desarrollo </h1>
+          <section className="flex grid " >
+          <h2 className="text-2 font-semibold mt-4 mb-4 text-teal-500">Lenguajes de Programacion</h2>
+          <AvatarGroup max={24} className="flex grid grid-cols-6  gap-4 items-center mt-4">
+              <Tooltip content="Java">
+              <Avatar radius="md"  src='/icons/java.png'/>
+              </Tooltip>
+              <Tooltip content="Kotlin" >
+              <Avatar radius="md"  src='/icons/kotlin.png'/>
+              </Tooltip>
+              <Tooltip content="JavaScript">
+              <Avatar radius="md"  src='/icons/js.png'/>
+              </Tooltip>
+              <Tooltip content="TypeScript" >
+              <Avatar radius="md"  src='/icons/ts.png'/>
+              </Tooltip>         
+              <Tooltip content="Python">
+              <Avatar radius="md" src='/icons/python.png'/>
+              </Tooltip>
+              <Tooltip content="Pygame">
+                <Avatar radius="md" src='/icons/pygame.png'/>
+              </Tooltip>
+            </AvatarGroup>
+          <h2 className="text-2 font-semibold mt-4 mb-4 text-teal-500">Herramientas Front End</h2>
+            <AvatarGroup max={24} className="flex grid grid-cols-6   gap-4 items-center mt-4 ">
+              <Tooltip content="Bootstrap ">
+              <Avatar radius="md"  src='/icons/bootstrap.png'/>
+              </Tooltip>
+              <Tooltip content="Next UI">
+              <Avatar radius="md"  src='/icons/nextui.png'/>
+              </Tooltip>
+              <Tooltip content="Next" >  
+              <Avatar radius="md"  src='/icons/next.png'/>
+              </Tooltip>
+              
+              <Tooltip content="CSS">
+              <Avatar radius="md" src='/icons/css.png'/>
+              </Tooltip>
+              <Tooltip content="HTLM">
+              <Avatar radius="md" src='/icons/HTML.png'/>
+              </Tooltip>
+              <Tooltip content="React">
+              <Avatar radius="md" src='/icons/react.png'/>
+              </Tooltip>
+              <Tooltip content="Redux">
+              <Avatar radius="md" src='/icons/redux.png'/>
+              </Tooltip>
+              <Tooltip content="Chakra UI">
+              <Avatar radius="md" src='/icons/chakra.png'/>
+              </Tooltip>
+              <Tooltip content="Vite" >
+              <Avatar radius="md" src='/icons/vite.png'/>
+              </Tooltip>
+              <Tooltip content="Nodemailer">
+              <Avatar radius="md" src='/icons/nodemailer.png'/>
+              </Tooltip>
+              <Tooltip content="Leaflet">
+              <Avatar radius="md" src='/icons/leaflet.png'/>
+              </Tooltip>
+              <Tooltip content="GoogleAuth">
+              <Avatar radius="md" src='/icons/googleIcon.jpg'/>
+              </Tooltip>
+            </AvatarGroup >
+            <h2 className="text-2 font-semibold mt-4 mb-4 text-teal-500">Herramientas Backend</h2>
+            <AvatarGroup max={24} className="flex grid grid-cols-6  gap-4 items-center mt-4 ">
+              <Tooltip content="Axios">
+              <Avatar radius="md" src='/icons/axios.png'/>
+              </Tooltip>
+              <Tooltip content="Express">
+              <Avatar radius="md" src='/icons/express.png'/>
+              </Tooltip>
+              <Tooltip content="Node">
+              <Avatar radius="md" src='/icons/node.png'/>
+              </Tooltip>
+              <Tooltip content="Sequelize">
+              <Avatar radius="md" src='/icons/sequelize.png'/>
+              </Tooltip>
+            </AvatarGroup>
+            <h2 className="text-2 font-semibold mt-4 mb-4 text-teal-500">Bases De Datos</h2>
+            <AvatarGroup max={24} className="flex grid grid-cols-6   gap-4 items-center mt-4 ">
+              <Tooltip content="Postgresql">
+              <Avatar radius="md" src='/icons/postgresql.png'/>
+              </Tooltip>
+              <Tooltip content="Mongo">
+              <Avatar radius="md"  src='/icons/mongo.png'/>
+              </Tooltip>
+            </AvatarGroup>
+            <h2 className="text-2 font-semibold mt-4 mb-4 text-teal-500">Tecnologias en la Nube</h2>
+            <AvatarGroup max={24} className="flex grid grid-cols-6  gap-4 items-center mt-4">
+              <Tooltip content="AWS">
+              <Avatar radius="md" src='/icons/aws.png' alt="AWS" title="AWS"/>
+              </Tooltip>
+              <Tooltip content="FireBase">
+               <Avatar radius="md" src='/icons/firebase.png'/>
+              </Tooltip>
+              <Tooltip content="ApiRest">
+               <Avatar radius="md" src='/icons/apirest.png'/>
+              </Tooltip>
+            </AvatarGroup>
+           
+            </section>
           </CardFooter>
           <Divider/>
-          <CardFooter className="justify-center padding-md">
+          <CardFooter className="flex grid grid-cols-3 items-center  gap-4 mt-4">
+            <Tooltip content="Discord">
             <Link
               isExternal
               as={NextLink}
@@ -96,6 +174,8 @@ export default function Home() {
             >
               <DiscordIcon/>
             </Link>
+            </Tooltip>
+            <Tooltip content="Github">
             <Link
               isExternal
               as={NextLink}
@@ -104,6 +184,8 @@ export default function Home() {
             >
               <GitHubIcon />
             </Link>
+            </Tooltip>
+            <Tooltip content="Linkedln">
             <Link
               isExternal
               as={NextLink}
@@ -112,6 +194,7 @@ export default function Home() {
             >
               <LinkedInIcon />
             </Link>
+            </Tooltip>
           </CardFooter>
         </Card>
       </section>

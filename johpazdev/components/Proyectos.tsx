@@ -12,16 +12,17 @@ import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
-import { GitHubIcon, DiscordIcon } from "@/components/icons";
+import { GitHubIcon, DiscordIcon, GooglePlayIcon } from "@/components/icons";
 import { title, subtitle } from "@/components/primitives";
 import { Divider } from "@nextui-org/divider";
 import { useEffect,useCallback } from "react";
 import styles from '../styles/styles.module.css'
 import { Avatar, AvatarGroup } from "@nextui-org/avatar";
+import { Tooltip } from "@nextui-org/tooltip";
 
 export default function Proyectos() {
 	const [likedStates, setLikedStates] = React.useState([false, false, false, false,false,false]);
-  const [isHovered, setIsHovered] = React.useState([false, false, false, false,false,false]);
+  const [isHovered,   setIsHovered] = React.useState([false, false, false, false,false,false]);
   const [isVideoPlaying, setIsVideoPlaying] = React.useState(false);
     
  
@@ -45,24 +46,44 @@ export default function Proyectos() {
 	<section className="grid grid-cols-2 gap-4 p-4">
        
    
-	<Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+	<Card  className={`w-full max-w-[400px] relative ${!isHovered ? styles.hoveredCard : ''}`}
+     >
 		<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny uppercase font-bold">App Rick And Morty Soy Henry</p>
         <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
         <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
-        <AvatarGroup  gap-4  isBordered isGrid max={9}>        
-          <Avatar src='/icons/axios.png'/>
-          <Avatar src='/icons/css.png'/>
-          <Avatar src='/icons/express.png'/>
-          <Avatar src='https://github.com/johpaz/Portfolio/blob/1820833aee4034aaaae929710f009625247b3335/johpazdev/public/icons/HTML.png'/>
-          <Avatar src='/icons/node.png'/>
-          <Avatar src='/icons/postgresql.png'/>
-          <Avatar src='/icons/react.png'/>
-          <Avatar src='/icons/redux.png'/>
-          <Avatar src='/icons/sequalize .png'/>
+        <AvatarGroup max={12} className="flex grid grid-cols-6  gap-4 items-center mt-4">        
+              <Tooltip content="JavaScript">
+              <Avatar radius="md"  src='/icons/js.png'/>
+              </Tooltip>
+              <Tooltip content="CSS">
+              <Avatar radius="md" src='/icons/css.png'/>
+              </Tooltip>
+              <Tooltip content="HTLM">
+              <Avatar radius="md" src='/icons/HTML.png'/>
+              </Tooltip>
+              <Tooltip content="React">
+              <Avatar radius="md" src='/icons/react.png'/>
+              </Tooltip>
+              <Tooltip content="Redux">
+              <Avatar radius="md" src='/icons/redux.png'/>
+              </Tooltip>
+              <Tooltip content="Axios">
+              <Avatar radius="md" src='/icons/axios.png'/>
+              </Tooltip>
+              <Tooltip content="Express">
+              <Avatar radius="md" src='/icons/express.png'/>
+              </Tooltip>
+              <Tooltip content="Node">
+              <Avatar radius="md" src='/icons/node.png'/>
+              </Tooltip>
+              <Tooltip content="Sequelize">
+              <Avatar radius="md" src='/icons/sequelize.png'/>
+              </Tooltip>
+              <Tooltip content="Postgresql">
+              <Avatar radius="md" src='/icons/postgresql.png'/>
+              </Tooltip>
+           
         </AvatarGroup>
       <Button
         isIconOnly
@@ -73,7 +94,9 @@ export default function Proyectos() {
 		>
         <HeartIcon
           className={likedStates[1] ? "[&>path]:stroke-transparent" : ""}
-      		  fill={likedStates[1] ? "currentColor" : "none"}
+      		fill={likedStates[1] ? "currentColor" : "none"}
+          width = {100}
+          height = {100} 
         />
       </Button>
       </CardHeader>
@@ -117,25 +140,45 @@ export default function Proyectos() {
            
           </CardFooter>
     </Card>
-    <Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <Card  className={`w-full max-w-[400px] relative ${!isHovered ? styles.hoveredCard : ''}`}
+     
     >
 	      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
         <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
         <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
         
-        <AvatarGroup className="items-justify ">        
-          <Avatar src='/icons/axios.png'/>
-          <Avatar src='/icons/css.png'/>
-          <Avatar src='/icons/express.png'/>
-          <Avatar src='/icons/HTML.png'/>
-          <Avatar src='/icons/node.png'/>
-          <Avatar src='/icons/postgresql.png'/>
-          <Avatar src='/icons/react.png'/>
-          <Avatar src='/icons/redux.png'/>
-          <Avatar src='/icons/sequalize .png'/>
+        <AvatarGroup max={12} className="flex grid grid-cols-6  gap-4 items-center mt-4">        
+        <Tooltip content="JavaScript">
+              <Avatar radius="md"  src='/icons/js.png'/>
+              </Tooltip>
+              <Tooltip content="CSS">
+              <Avatar radius="md" src='/icons/css.png'/>
+              </Tooltip>
+              <Tooltip content="HTLM">
+              <Avatar radius="md" src='/icons/HTML.png'/>
+              </Tooltip>
+              <Tooltip content="React">
+              <Avatar radius="md" src='/icons/react.png'/>
+              </Tooltip>
+              <Tooltip content="Redux">
+              <Avatar radius="md" src='/icons/redux.png'/>
+              </Tooltip>
+              <Tooltip content="Axios">
+              <Avatar radius="md" src='/icons/axios.png'/>
+              </Tooltip>
+              <Tooltip content="Express">
+              <Avatar radius="md" src='/icons/express.png'/>
+              </Tooltip>
+              <Tooltip content="Node">
+              <Avatar radius="md" src='/icons/node.png'/>
+              </Tooltip>
+              <Tooltip content="Sequelize">
+              <Avatar radius="md" src='/icons/sequelize.png'/>
+              </Tooltip>
+              <Tooltip content="Postgresql">
+              <Avatar radius="md" src='/icons/postgresql.png'/>
+              </Tooltip>
         </AvatarGroup>
       <Button
         isIconOnly
@@ -146,7 +189,9 @@ export default function Proyectos() {
       >
         <HeartIcon
           className={likedStates[2] ? "[&>path]:stroke-transparent" : ""}
-		  fill={likedStates[2] ? "currentColor" : "none"}
+          fill={likedStates[2] ? "currentColor" : "none"}
+          width = {100}
+          height = {100} 
         />
       </Button>
       </CardHeader>
@@ -186,17 +231,19 @@ export default function Proyectos() {
            
           </CardFooter>
     </Card>
-    <Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <Card  className={`w-full max-w-[400px] relative ${!isHovered ? styles.hoveredCard : ''}`}
+      >
 	    <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny uppercase font-bold">App ArtGas Monitor </p>
         <small className="text-default-500">Desarrollo en Android Studio, disponible en playStore</small>
         <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
-        <AvatarGroup className="items-justify ">        
-          <Avatar src='/icons/kotlin.png'/>
-          <Avatar src='/icons/java.png'/>
+        <AvatarGroup max={3} className="flex grid grid-cols-6  gap-4 items-center mt-4">        
+              <Tooltip content="Java">
+              <Avatar radius="md"  src='/icons/java.png'/>
+              </Tooltip>
+              <Tooltip content="Kotlin" >
+              <Avatar radius="md"  src='/icons/kotlin.png'/>
+              </Tooltip>
         
         </AvatarGroup>
       <Button
@@ -208,7 +255,9 @@ export default function Proyectos() {
       >
         <HeartIcon
           className={likedStates[3] ? "[&>path]:stroke-transparent" : ""}
-		  fill={likedStates[3] ? "currentColor" : "none"}
+		      fill={likedStates[3] ? "currentColor" : "none"}
+          width = {100}
+          height = {100} 
         />
       </Button>
       </CardHeader>
@@ -233,34 +282,39 @@ export default function Proyectos() {
               isExternal
               as={NextLink}
               className={buttonStyles({ variant: "bordered", radius: "full" })}
-              href={siteConfig.links.discord}
+              href={siteConfig.links.artgas}
             >
-              <DiscordIcon />
+              <GooglePlayIcon />
             </Link>
             <Link
               isExternal
               as={NextLink}
               className={buttonStyles({ variant: "bordered", radius: "full" })}
-              href={siteConfig.links.artgas}
+              href={siteConfig.links.github}
             >
               <GitHubIcon />
             </Link>
            
           </CardFooter>
     </Card>
-    <Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <Card  className={`w-full max-w-[400px] relative ${!isHovered ? styles.hoveredCard : ''}`}
+    
     >
 	      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny uppercase font-bold">App Traductor Libre</p>
         <small className="text-default-500">Desarrollo en Android Studio,disponible Apk(Voz a texto, texto a voz.)</small>
         <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
         
-        <AvatarGroup className="items-justify ">        
-          <Avatar src='/icons/kotlin.png'/>
-          <Avatar src='/icons/java.png'/>
-          <Avatar src='/icons/firebase.png'/>
+        <AvatarGroup max={3} className="flex grid grid-cols-6  gap-4 items-center mt-4">        
+              <Tooltip content="Java">
+              <Avatar radius="md"  src='/icons/java.png'/>
+              </Tooltip>
+              <Tooltip content="Kotlin" >
+              <Avatar radius="md"  src='/icons/kotlin.png'/>
+              </Tooltip>
+              <Tooltip content="FireBase">
+               <Avatar radius="md" src='/icons/firebase.png'/>
+              </Tooltip>
          
         </AvatarGroup>
       <Button
@@ -272,7 +326,9 @@ export default function Proyectos() {
       >
         <HeartIcon
           className={likedStates[4] ? "[&>path]:stroke-transparent" : ""}
-		  fill={likedStates[4] ? "currentColor" : "none"}
+          fill={likedStates[4] ? "currentColor" : "none"}
+          width = {100}
+          height = {100} 
 		  />
       </Button>
       </CardHeader>
@@ -313,18 +369,21 @@ export default function Proyectos() {
           </CardFooter>
     </Card>
 	
-    <Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <Card  className={`w-full max-w-[400px] relative ${!isHovered ? styles.hoveredCard : ''}`}
+  
     >
 	      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">App Pokemon Soy Henry</p>
-        <small className="text-default-500">Desarrollo full stack, front y back(DB postgresql)</small>
+        <p className="text-tiny uppercase font-bold">App Juego Naves</p>  
+        <small className="text-default-500">Desarrollo en Pygame, Juego ejecutable en windows</small>
         <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
-        <AvatarGroup className="items-justify ">        
-          <Avatar src='/icons/python.png'/>
-          <Avatar src='/icons/pygame.png'/>
-          </AvatarGroup>
+        <AvatarGroup max={3} className="flex grid grid-cols-6  gap-4 items-center mt-4">        
+            <Tooltip content="Python">
+              <Avatar radius="md" src='/icons/python.png'/>
+              </Tooltip>
+              <Tooltip content="Pygame">
+                <Avatar radius="md" src='/icons/pygame.png'/>
+              </Tooltip>
+        </AvatarGroup>
       <Button
         isIconOnly
         className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
@@ -334,7 +393,9 @@ export default function Proyectos() {
       >
         <HeartIcon
           className={likedStates[5] ? "[&>path]:stroke-transparent" : ""}
-		  fill={likedStates[5] ? "currentColor" : "none"}
+		      fill={likedStates[5] ? "currentColor" : "none"}
+          width = {100}
+          height = {100} 
 		  />
       </Button>
       </CardHeader>
@@ -374,27 +435,59 @@ export default function Proyectos() {
            
           </CardFooter>
 	</Card>
-	<Card  className={`w-full max-w-[400px] relative ${isHovered ? styles.hoveredCard : ''}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+	<Card  className={`w-full max-w-[400px] relative ${!isHovered ? styles.hoveredCard : ''}`}
+      
     >
 	      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">App Juego Naves</p>  
-        <small className="text-default-500">Desarrollo en Pygame, Juego ejecutable en windows</small>
+        <p className="text-tiny uppercase font-bold">App Profinder</p>  
+        <small className="text-default-500 mt-8">App para que los profesionales ofrezcan sus servicios a cliente que a su vez pueden publicar sus necesidades.</small>
         <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
-        <AvatarGroup className="items-justify">        
-          <Avatar src='/icons/axios.png'/>
-          <Avatar src='/icons/css.png'/>
-          <Avatar src='/icons/express.png'/>
-          <Avatar src='/icons/HTML.png'/>
-          <Avatar src='/icons/node.png'/>
-          <Avatar src='/icons/postgresql.png'/>
-          <Avatar src='/icons/react.png'/>
-          <Avatar src='/icons/redux.png'/>
-          <Avatar src='/icons/sequalize.png'/>
-          <Avatar src='/icons/chakra.png'/>
-          <Avatar src='/icons/vite.png'/>
-          <Avatar src='/icons/firebase.png'/>
+        <AvatarGroup max={15} className="grid grid-cols-8  gap-4 justify-center mt-4 mb-4">        
+              <Tooltip content="JavaScript">
+              <Avatar radius="md"  src='/icons/js.png'/>
+              </Tooltip>
+              <Tooltip content="CSS">
+              <Avatar radius="md" src='/icons/css.png'/>
+              </Tooltip>
+              <Tooltip content="HTLM">
+              <Avatar radius="md" src='/icons/HTML.png'/>
+              </Tooltip>
+              <Tooltip content="React">
+              <Avatar radius="md" src='/icons/react.png'/>
+              </Tooltip>
+              <Tooltip content="Redux">
+              <Avatar radius="md" src='/icons/redux.png'/>
+              </Tooltip>
+              <Tooltip content="Chakra UI">
+              <Avatar radius="md" src='/icons/chakra.png'/>
+              </Tooltip>
+              <Tooltip content="Vite" >
+              <Avatar radius="md" src='/icons/vite.png'/>
+              </Tooltip>
+              <Tooltip content="Axios">
+              <Avatar radius="md" src='/icons/axios.png'/>
+              </Tooltip>
+              <Tooltip content="Express">
+              <Avatar radius="md" src='/icons/express.png'/>
+              </Tooltip>
+              <Tooltip content="Node">
+              <Avatar radius="md" src='/icons/node.png'/>
+              </Tooltip>
+              <Tooltip content="Sequelize">
+              <Avatar radius="md" src='/icons/sequelize.png'/>
+              </Tooltip>
+              <Tooltip content="Postgresql">
+              <Avatar radius="md" src='/icons/postgresql.png'/>
+              </Tooltip>
+              <Tooltip content="Nodemailer">
+              <Avatar radius="md" src='/icons/nodemailer.png'/>
+              </Tooltip>
+              <Tooltip content="Leaflet">
+              <Avatar radius="md" src='/icons/leaflet.png'/>
+              </Tooltip>
+              <Tooltip content="GoogleAuth">
+              <Avatar radius="md" src='/icons/googleIcon.jpg'/>
+              </Tooltip>
         </AvatarGroup>
       <Button
         isIconOnly
@@ -405,7 +498,9 @@ export default function Proyectos() {
       >
         <HeartIcon
           className={likedStates[6] ? "[&>path]:stroke-transparent" : ""}
-		  fill={likedStates[6] ? "currentColor" : "none"}
+		      fill={likedStates[6] ? "currentColor" : "none"}
+          width = {100}
+          height = {100} 
 		  />
       </Button>
       </CardHeader>

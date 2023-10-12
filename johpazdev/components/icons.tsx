@@ -17,6 +17,9 @@ export const LinkedInIcon: React.FC = () => (
 	<img src='/icons/discord.png' width={50} height={60}/>
   );
   
+  export const GooglePlayIcon: React.FC = () => (
+	<img src='/icons/googleplay.png' width={50} height={60}/>
+  );
   
 
 export const MoonFilledIcon = ({
