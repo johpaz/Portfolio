@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-unused-vars": "off", // Deshabilita la advertencia sobre variables no utilizadas
+    "import/no-unresolved": "off", // Deshabilita la advertencia sobre importaciones no resueltas
+    "import/extensions": "off" // Deshabilita la advertencia sobre extensiones de archivos en las importaciones
+  }
 }
