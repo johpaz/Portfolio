@@ -1,6 +1,6 @@
 import NextLink from "next/link";
 import { Link } from "@nextui-org/link";
-import { button as buttonStyles} from "@nextui-org/theme";
+import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GitHubIcon, DiscordIcon, LinkedInIcon } from "@/components/icons";
@@ -14,30 +14,6 @@ import ContactForm from "@/components/FormContact";
 import styles from '../styles/styles.module.css'
 import '../styles/animations.css'
 import { Avatar, AvatarGroup } from "@nextui-org/avatar";
-import postgress from '../public/icons/postgresql.png'
-import axios from '../public/icons/axios.png'
-import react from '../public/icons/react.png'
-import redux from '../public/icons/redux.png'
-import js from '../public/icons/js.png'
-import ts from '../public/icons/ts.png'
-import express from '../public/icons/express.png'
-import kotlin from '../public/icons/kotlin.png'
-import java from '../public/icons/java.png'
-import css from '../public/icons/css.png'
-import html from '../public/icons/HTML.png'
-import sequalize from '../public/icons/sequalize.png'
-import firebase from '../public/icons/firebase.png'
-import python from '../public/icons/python.png'
-import pygame from '../public/icons/pygame.png'
-import node from '../public/icons/node.png'
-import vite from '../public/icons/vite.svg'
-import chakra from '../public/icons/chakra.png'
-import awsImage from '../public/icons/aws.png'
-import next from '../public/icons/next.png'
-import nextui from '../public/icons/nextui.png'
-import bootstrap from '../public/icons/bootstrap.png'
-import mongo from '../public/icons/mongo.png'
-
 
 export default function Home() {
   return (
@@ -86,31 +62,28 @@ export default function Home() {
           <Divider />
           <CardFooter className="mt-4">
           <h1 className={`text-center justify-center font-semibold text-teal-500 mb-2 ${subtitle()}`}>Tecnologias de Desarrollo </h1>
-             <AvatarGroup isBordered isGrid max={24}>
-             <Avatar src={awsImage}/>
-              <Avatar src={bootstrap}/>
-              <Avatar src={java}/>
-              <Avatar src={kotlin}/>
-              <Avatar src={js}/>
-              <Avatar src={next}/>
-              <Avatar src={nextui}/>
-              <Avatar src={mongo}/>
-              <Avatar src={ts}/>
-              <Avatar src={axios}/>
-              <Avatar src={css}/>
-              <Avatar src={express}/>
-              <Avatar src={html}/>
-              <Avatar src={node}/>
-              <Avatar src={postgress}/>
-              <Avatar src={react}/>
-              <Avatar src={redux}/>
-              <Avatar src={sequalize}/>
-              <Avatar src={chakra}/>
-              <Avatar src={vite}/>
-              <Avatar src={firebase}/>
-              <Avatar src={pygame}/>
-              <Avatar src={python}/>
-             
+             <AvatarGroup>
+             <Avatar src='/icons/aws.png'/>
+              <Avatar src='/icons/bootstrap.png'/>
+              <Avatar src='/icons/java.png'/>
+              <Avatar src='/icons/kotlin.png'/>
+              <Avatar src='/icons/js.png'/>
+              <Avatar src='/icons/next.png'/>
+              <Avatar src='/icons/nextui.png'/>
+              <Avatar src='/icons/mongo.png'/>
+              <Avatar src='/icons/typescript.png'/>
+              <Avatar src='/icons/axios.png'/>
+              <Avatar src='/icons/css.png'/>
+              <Avatar src='/icons/express.png'/>
+              <Avatar src='/icons/HTML.png'/>
+              <Avatar src='/icons/node.png'/>
+              <Avatar src='/icons/postgresql.png'/>
+              <Avatar src='/icons/react.png'/>
+              <Avatar src='/icons/redux.png'/>
+              <Avatar src='/icons/sequalize.png'/>
+              <Avatar src='/icons/chakra.png'/>
+              <Avatar src='/icons/vite.png'/>
+              <Avatar src='/icons/firebase.png'/>
              </AvatarGroup>
           </CardFooter>
           <Divider/>
