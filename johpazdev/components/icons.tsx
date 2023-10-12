@@ -2,23 +2,23 @@
 
 import * as React from "react";
 import { IconSvgProps } from "@/types";
-
+import {Image} from "@nextui-org/image";
 
 export const LinkedInIcon: React.FC = () => (
-	<img src={'./icons/linkedin.png'} width={60} height={60}/>
+	<Image src={'./icons/linkedin.png'} width={60} height={60}/>
   );
   
   
   export const GitHubIcon: React.FC = () => (
-	<img src='/icons/iconogithub.png'  width={60} height={60}/>
+	<Image src='/icons/iconogithub.png'  width={60} height={60}/>
   );
   
   export const DiscordIcon: React.FC = () => (
-	<img src='/icons/discord.png' width={50} height={60}/>
+	<Image src='/icons/discord.png' width={50} height={60}/>
   );
   
   export const GooglePlayIcon: React.FC = () => (
-	<img src='/icons/googleplay.png' width={50} height={60}/>
+	<Image src='/icons/googleplay.png' width={50} height={60}/>
   );
   
 

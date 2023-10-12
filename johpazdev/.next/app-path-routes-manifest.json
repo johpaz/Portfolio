@@ -1,6 +1,6 @@
 {
   "/page": "/",
-  "/about/page": "/about",
   "/blog/page": "/blog",
-  "/proyectos/page": "/proyectos"
+  "/proyectos/page": "/proyectos",
+  "/about/page": "/about"
 }

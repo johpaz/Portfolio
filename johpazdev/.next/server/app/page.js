@@ -4,7 +4,7 @@ exports.id = 931;
 exports.ids = [931];
 exports.modules = {
 
-/***/ 8038:
+/***/ 18038:
 /***/ ((module) => {
 
 "use strict";
@@ -12,7 +12,7 @@ module.exports = require("next/dist/compiled/react");
 
 /***/ }),
 
-/***/ 8704:
+/***/ 98704:
 /***/ ((module) => {
 
 "use strict";
@@ -20,7 +20,7 @@ module.exports = require("next/dist/compiled/react-dom/server-rendering-stub");
 
 /***/ }),
 
-/***/ 7897:
+/***/ 97897:
 /***/ ((module) => {
 
 "use strict";
@@ -28,7 +28,7 @@ module.exports = require("next/dist/compiled/react-server-dom-webpack/client");
 
 /***/ }),
 
-/***/ 6786:
+/***/ 56786:
 /***/ ((module) => {
 
 "use strict";
@@ -44,7 +44,7 @@ module.exports = require("next/dist/server/app-render/app-render");
 
 /***/ }),
 
-/***/ 1844:
+/***/ 41844:
 /***/ ((module) => {
 
 "use strict";
@@ -52,7 +52,7 @@ module.exports = require("next/dist/server/app-render/get-segment-param");
 
 /***/ }),
 
-/***/ 6624:
+/***/ 96624:
 /***/ ((module) => {
 
 "use strict";
@@ -60,7 +60,7 @@ module.exports = require("next/dist/server/future/helpers/interception-routes");
 
 /***/ }),
 
-/***/ 5281:
+/***/ 75281:
 /***/ ((module) => {
 
 "use strict";
@@ -68,7 +68,7 @@ module.exports = require("next/dist/server/future/route-modules/route-module");
 
 /***/ }),
 
-/***/ 7085:
+/***/ 57085:
 /***/ ((module) => {
 
 "use strict";
@@ -84,7 +84,7 @@ module.exports = require("next/dist/shared/lib/get-img-props");
 
 /***/ }),
 
-/***/ 199:
+/***/ 20199:
 /***/ ((module) => {
 
 "use strict";
@@ -92,7 +92,7 @@ module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
-/***/ 6864:
+/***/ 66864:
 /***/ ((module) => {
 
 "use strict";
@@ -100,7 +100,7 @@ module.exports = require("next/dist/shared/lib/head");
 
 /***/ }),
 
-/***/ 9569:
+/***/ 39569:
 /***/ ((module) => {
 
 "use strict";
@@ -108,7 +108,7 @@ module.exports = require("next/dist/shared/lib/hooks-client-context");
 
 /***/ }),
 
-/***/ 2210:
+/***/ 52210:
 /***/ ((module) => {
 
 "use strict";
@@ -116,7 +116,7 @@ module.exports = require("next/dist/shared/lib/image-config");
 
 /***/ }),
 
-/***/ 5359:
+/***/ 35359:
 /***/ ((module) => {
 
 "use strict";
@@ -124,7 +124,7 @@ module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
-/***/ 7160:
+/***/ 17160:
 /***/ ((module) => {
 
 "use strict";
@@ -132,7 +132,7 @@ module.exports = require("next/dist/shared/lib/router-context");
 
 /***/ }),
 
-/***/ 893:
+/***/ 30893:
 /***/ ((module) => {
 
 "use strict";
@@ -140,7 +140,7 @@ module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix");
 
 /***/ }),
 
-/***/ 2336:
+/***/ 12336:
 /***/ ((module) => {
 
 "use strict";
@@ -148,7 +148,7 @@ module.exports = require("next/dist/shared/lib/router/utils/format-url");
 
 /***/ }),
 
-/***/ 4490:
+/***/ 17887:
 /***/ ((module) => {
 
 "use strict";
@@ -156,7 +156,7 @@ module.exports = require("next/dist/shared/lib/router/utils/handle-smooth-scroll
 
 /***/ }),
 
-/***/ 8735:
+/***/ 98735:
 /***/ ((module) => {
 
 "use strict";
@@ -164,7 +164,7 @@ module.exports = require("next/dist/shared/lib/router/utils/is-bot");
 
 /***/ }),
 
-/***/ 120:
+/***/ 60120:
 /***/ ((module) => {
 
 "use strict";
@@ -172,7 +172,7 @@ module.exports = require("next/dist/shared/lib/router/utils/is-local-url");
 
 /***/ }),
 
-/***/ 8231:
+/***/ 68231:
 /***/ ((module) => {
 
 "use strict";
@@ -180,7 +180,7 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-path");
 
 /***/ }),
 
-/***/ 2325:
+/***/ 54614:
 /***/ ((module) => {
 
 "use strict";
@@ -188,7 +188,7 @@ module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix");
 
 /***/ }),
 
-/***/ 3750:
+/***/ 53750:
 /***/ ((module) => {
 
 "use strict";
@@ -196,7 +196,7 @@ module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slas
 
 /***/ }),
 
-/***/ 982:
+/***/ 70982:
 /***/ ((module) => {
 
 "use strict";
@@ -204,7 +204,7 @@ module.exports = require("next/dist/shared/lib/router/utils/resolve-href");
 
 /***/ }),
 
-/***/ 9618:
+/***/ 79618:
 /***/ ((module) => {
 
 "use strict";
@@ -212,7 +212,7 @@ module.exports = require("next/dist/shared/lib/server-inserted-html");
 
 /***/ }),
 
-/***/ 8423:
+/***/ 78423:
 /***/ ((module) => {
 
 "use strict";
@@ -220,7 +220,7 @@ module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
-/***/ 8658:
+/***/ 98658:
 /***/ ((module) => {
 
 "use strict";
@@ -228,7 +228,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once");
 
 /***/ }),
 
-/***/ 8409:
+/***/ 48409:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -243,10 +243,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7262);
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9513);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1823);
+/* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19513);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(31823);
 /* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2502);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12502);
 /* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
 /* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__[__WEBPACK_IMPORT_KEY__]
@@ -262,14 +262,14 @@ const tree = {
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1780)), "/home/johpaz/Documentos/Portfolio/johpazdev/app/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 61780)), "/home/johpaz/Documentos/Portfolio/johpazdev/app/page.tsx"],
           
         }]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9109)), "/home/johpaz/Documentos/Portfolio/johpazdev/app/layout.tsx"],
-'error': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9710)), "/home/johpaz/Documentos/Portfolio/johpazdev/app/error.tsx"],
-'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 5493, 23)), "next/dist/client/components/not-found-error"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 99109)), "/home/johpaz/Documentos/Portfolio/johpazdev/app/layout.tsx"],
+'error': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 69710)), "/home/johpaz/Documentos/Portfolio/johpazdev/app/error.tsx"],
+'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 95493, 23)), "next/dist/client/components/not-found-error"],
         
       }
       ]
@@ -306,20 +306,21 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 1470:
+/***/ 66932:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 954, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2209));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6302));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5759));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3040));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9137));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 979))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 50954, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 77966));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 80979));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 83040));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 76302));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 12209));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95759));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 89137))
 
 /***/ }),
 
-/***/ 3040:
+/***/ 83040:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -327,15 +328,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(56786);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4952);
-/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(298);
-/* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3171);
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(44952);
+/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50298);
+/* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(33171);
 /* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6335);
-/* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(654);
-/* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7863);
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5105);
+/* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(10654);
+/* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(87863);
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(95105);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
@@ -533,7 +534,7 @@ const ContactForm = ()=>{
 
 /***/ }),
 
-/***/ 1780:
+/***/ 61780:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -546,28 +547,28 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
+var jsx_runtime_ = __webpack_require__(56786);
 // EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(5124);
+var next_link = __webpack_require__(25124);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/link/dist/index.mjs
-var dist = __webpack_require__(2692);
+var dist = __webpack_require__(72692);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/theme/dist/chunk-XJU7LDVX.mjs + 1 modules
-var chunk_XJU7LDVX = __webpack_require__(8361);
+var chunk_XJU7LDVX = __webpack_require__(58361);
 // EXTERNAL MODULE: ./config/site.ts
-var site = __webpack_require__(2208);
+var site = __webpack_require__(62208);
 // EXTERNAL MODULE: ./components/primitives.ts
-var primitives = __webpack_require__(4565);
+var primitives = __webpack_require__(94565);
 // EXTERNAL MODULE: ./components/icons.tsx
-var icons = __webpack_require__(9555);
+var icons = __webpack_require__(79555);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/card/dist/index.mjs
-var card_dist = __webpack_require__(1321);
+var card_dist = __webpack_require__(31321);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/divider/dist/chunk-44JHHBS2.mjs + 10 modules
-var chunk_44JHHBS2 = __webpack_require__(2644);
+var chunk_44JHHBS2 = __webpack_require__(62644);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/skeleton/dist/chunk-26CMBM6O.mjs + 9 modules
-var chunk_26CMBM6O = __webpack_require__(5330);
+var chunk_26CMBM6O = __webpack_require__(25330);
 // EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js
-var module_proxy = __webpack_require__(1363);
+var module_proxy = __webpack_require__(61363);
 ;// CONCATENATED MODULE: ./components/Proyectos.tsx
 
 const proxy = (0,module_proxy.createProxy)(String.raw`/home/johpaz/Documentos/Portfolio/johpazdev/components/Proyectos.tsx`)
@@ -595,11 +596,11 @@ const FormContact_default_ = FormContact_proxy.default;
 
 /* harmony default export */ const FormContact = (FormContact_default_);
 // EXTERNAL MODULE: ./styles/animations.css
-var animations = __webpack_require__(2244);
+var animations = __webpack_require__(12244);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/avatar/dist/index.mjs
-var avatar_dist = __webpack_require__(659);
+var avatar_dist = __webpack_require__(40659);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/tooltip/dist/index.mjs
-var tooltip_dist = __webpack_require__(6875);
+var tooltip_dist = __webpack_require__(36875);
 ;// CONCATENATED MODULE: ./app/page.tsx
 
 
@@ -1009,7 +1010,7 @@ function Home() {
 
 /***/ }),
 
-/***/ 2244:
+/***/ 12244:
 /***/ (() => {
 
 
@@ -1023,7 +1024,7 @@ function Home() {
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [355,149,664,945,678,67,261,979,565], () => (__webpack_exec__(8409)));
+var __webpack_exports__ = __webpack_require__.X(0, [993,149,664,945,678,67,329,979,794], () => (__webpack_exec__(48409)));
 module.exports = __webpack_exports__;
 
 })();

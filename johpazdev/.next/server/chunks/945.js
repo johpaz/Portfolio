@@ -3,7 +3,7 @@ exports.id = 945;
 exports.ids = [945];
 exports.modules = {
 
-/***/ 4945:
+/***/ 34945:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 
@@ -34,9 +34,9 @@ var chunk_HHQZCQ2Q_y = (...t)=>s(t).filter(Boolean), chunk_HHQZCQ2Q_i = (t, e)=>
 
 
 // EXTERNAL MODULE: ./node_modules/tailwind-merge/dist/lib/tw-merge.mjs
-var tw_merge = __webpack_require__(5375);
+var tw_merge = __webpack_require__(45375);
 // EXTERNAL MODULE: ./node_modules/tailwind-merge/dist/lib/extend-tailwind-merge.mjs + 1 modules
-var extend_tailwind_merge = __webpack_require__(2924);
+var extend_tailwind_merge = __webpack_require__(72924);
 ;// CONCATENATED MODULE: ./node_modules/tailwind-variants/dist/index.js
 
 

@@ -2,7 +2,7 @@ exports.id = 979;
 exports.ids = [979];
 exports.modules = {
 
-/***/ 979:
+/***/ 80979:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15,20 +15,20 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
+var jsx_runtime_ = __webpack_require__(56786);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
-var react_ = __webpack_require__(8038);
+var react_ = __webpack_require__(18038);
 var react_default = /*#__PURE__*/__webpack_require__.n(react_);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/card/dist/chunk-BJUMDPFJ.mjs + 1 modules
-var chunk_BJUMDPFJ = __webpack_require__(1697);
+var chunk_BJUMDPFJ = __webpack_require__(81697);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/card/dist/chunk-J333S7JQ.mjs
-var chunk_J333S7JQ = __webpack_require__(9810);
+var chunk_J333S7JQ = __webpack_require__(39810);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/card/dist/chunk-5ALFRFZW.mjs
-var chunk_5ALFRFZW = __webpack_require__(9336);
+var chunk_5ALFRFZW = __webpack_require__(39336);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/card/dist/chunk-JHUBASYZ.mjs
-var chunk_JHUBASYZ = __webpack_require__(2878);
+var chunk_JHUBASYZ = __webpack_require__(62878);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/button/dist/chunk-KHVXTQA4.mjs + 7 modules
-var chunk_KHVXTQA4 = __webpack_require__(1818);
+var chunk_KHVXTQA4 = __webpack_require__(61818);
 ;// CONCATENATED MODULE: ./components/HeartIcon.jsx
 
 
@@ -51,12 +51,12 @@ const HeartIcon = ({ size = 24, width, height, strokeWidth = 1.5, fill = "none",
     });
 
 // EXTERNAL MODULE: ./node_modules/@nextui-org/link/dist/chunk-MPX6TMFQ.mjs + 1 modules
-var chunk_MPX6TMFQ = __webpack_require__(5123);
+var chunk_MPX6TMFQ = __webpack_require__(95123);
 // EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(1440);
+var next_link = __webpack_require__(11440);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/theme/dist/chunk-XJU7LDVX.mjs
-var chunk_XJU7LDVX = __webpack_require__(6672);
+var chunk_XJU7LDVX = __webpack_require__(76672);
 ;// CONCATENATED MODULE: ./config/site.ts
 const siteConfig = {
     name: "JohpazDev",
@@ -102,9 +102,9 @@ const siteConfig = {
 };
 
 // EXTERNAL MODULE: ./components/icons.tsx
-var icons = __webpack_require__(4642);
+var icons = __webpack_require__(94642);
 // EXTERNAL MODULE: ./node_modules/tailwind-variants/dist/index.js + 1 modules
-var dist = __webpack_require__(4175);
+var dist = __webpack_require__(64175);
 ;// CONCATENATED MODULE: ./components/primitives.ts
 
 const title = (0,dist.tv)({
@@ -159,16 +159,16 @@ const subtitle = (0,dist.tv)({
 });
 
 // EXTERNAL MODULE: ./node_modules/@nextui-org/divider/dist/chunk-44JHHBS2.mjs + 10 modules
-var chunk_44JHHBS2 = __webpack_require__(4746);
+var chunk_44JHHBS2 = __webpack_require__(14746);
 // EXTERNAL MODULE: ./styles/styles.module.css
-var styles_module = __webpack_require__(3690);
+var styles_module = __webpack_require__(43690);
 var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/avatar/dist/chunk-K626GFF6.mjs
-var chunk_K626GFF6 = __webpack_require__(6681);
+var chunk_K626GFF6 = __webpack_require__(66681);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/avatar/dist/chunk-XBMXQVV7.mjs
 var chunk_XBMXQVV7 = __webpack_require__(3807);
 // EXTERNAL MODULE: ./node_modules/@nextui-org/tooltip/dist/chunk-WMIINNJ6.mjs + 1 modules
-var chunk_WMIINNJ6 = __webpack_require__(2332);
+var chunk_WMIINNJ6 = __webpack_require__(62332);
 ;// CONCATENATED MODULE: ./components/Proyectos.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
@@ -238,7 +238,8 @@ function Proyectos() {
                 className: "grid grid-cols-2 gap-4 p-4",
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)(chunk_BJUMDPFJ/* card_default */.w, {
-                        className: `w-full max-w-[400px] relative ${!isHovered ? (styles_module_default()).hoveredCard : ""}`,
+                        isPressable: true,
+                        className: `w-full max-w-[400px] relative `,
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(chunk_J333S7JQ/* card_header_default */.u, {
                                 className: "pb-0 pt-2 px-4 flex-col items-start",
@@ -387,8 +388,8 @@ function Proyectos() {
                                     className: "relative  col-span-6 md:col-span-4",
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("video", {
                                         controls: true,
-                                        height: 500,
-                                        width: 280,
+                                        height: "100%",
+                                        width: "100%",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("source", {
                                                 src: "/media/Profinder.mp4",
@@ -795,7 +796,7 @@ function Proyectos() {
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("video", {
                                         controls: true,
                                         height: 400,
-                                        width: 250,
+                                        width: "100%",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("source", {
                                                 src: "/media/pygame.webm",
@@ -1048,7 +1049,7 @@ function Proyectos() {
 
 /***/ }),
 
-/***/ 3690:
+/***/ 43690:
 /***/ ((module) => {
 
 // Exports
