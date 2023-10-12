@@ -45,7 +45,7 @@ export default function Proyectos() {
       <Divider className="mt-4"/>
 	<section className="grid grid-cols-2 gap-4 p-4">
        
-  <Card  className={`w-full max-w-[400px] relative ${!isHovered ? styles.hoveredCard : ''}`}
+  <Card isPressable className={`w-full max-w-[400px] relative `}
       
       >
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
@@ -119,8 +119,8 @@ export default function Proyectos() {
           <div className="relative  col-span-6 md:col-span-4">
             <video
               controls
-        height={500}
-              width={280}
+              height="100%"
+              width="100%"
             >
               <source
                 src="/media/Profinder.mp4"  
@@ -362,7 +362,7 @@ export default function Proyectos() {
         className={likedStates[5] ? "[&>path]:stroke-transparent" : ""}
         fill={likedStates[5] ? "currentColor" : "none"}
         width = {100}
-        height = {100} 
+        height = {100}
     />
     </Button>
     </CardHeader>
@@ -371,8 +371,8 @@ export default function Proyectos() {
       <div className="relative  col-span-6 md:col-span-4">
         <video
           controls
-    height={400}
-          width={250}
+          height={400}
+          width="100%"
         >
           <source
             src="/media/pygame.webm"  

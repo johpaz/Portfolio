@@ -20,7 +20,7 @@ export default function Home() {
     <section className="flex flex-col items-center justify-center py-8 md:py-10">
       <Divider/>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <Card className={` card  max-w-[640px]`} >
+        <Card  className={` card  max-w-[640px]`} >
           <Skeleton className="w-full h-full rounded-xl">
             <div className="h-5 w-3/5 rounded-lg bg-default-200"></div>
           </Skeleton>
