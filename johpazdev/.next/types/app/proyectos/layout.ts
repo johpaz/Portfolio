@@ -1,4 +1,4 @@
-// File: /home/johpaz/Documentos/Portfolio/johpazdev/app/proyectos/layout.tsx
+// File: /home/johpaz/Documentos/johpazdevPortafolio/johpazdev/app/proyectos/layout.tsx
 import * as entry from '../../../../app/proyectos/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

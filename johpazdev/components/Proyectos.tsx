@@ -44,7 +44,216 @@ export default function Proyectos() {
       </div>
       <Divider className="mt-4"/>
 	<section className="grid grid-cols-2 gap-4 p-4">
-       
+
+  <Card isPressable className={`w-full max-w-[400px] relative `}
+      
+      >
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+          <p className="text-tiny uppercase font-bold">App Agroinsumos</p>  
+          <small className="text-default-500 mt-8">App de seguimiento de ordenes de compra en el proceso logistica para el cliente y proceso interno. WorkFlow</small>
+          <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
+          <AvatarGroup max={15} className="grid grid-cols-8  gap-4 justify-center mt-4 mb-4">        
+                <Tooltip content="JavaScript">
+                <Avatar radius="md"  src='/icons/js.png'/>
+                </Tooltip>
+                <Tooltip content="CSS">
+                <Avatar radius="md" src='/icons/css.png'/>
+                </Tooltip>
+                <Tooltip content="HTLM">
+                <Avatar radius="md" src='/icons/HTML.png'/>
+                </Tooltip>
+                <Tooltip content="React">
+                <Avatar radius="md" src='/icons/react.png'/>
+                </Tooltip>
+                <Tooltip content="Redux">
+                <Avatar radius="md" src='/icons/redux.png'/>
+                </Tooltip>
+                <Tooltip content="Chakra UI">
+                <Avatar radius="md" src='/icons/chakra.png'/>
+                </Tooltip>
+                <Tooltip content="Vite" >
+                <Avatar radius="md" src='/icons/vite.png'/>
+                </Tooltip>
+                <Tooltip content="Axios">
+                <Avatar radius="md" src='/icons/axios.png'/>
+                </Tooltip>
+                <Tooltip content="Express">
+                <Avatar radius="md" src='/icons/express.png'/>
+                </Tooltip>
+                <Tooltip content="Node">
+                <Avatar radius="md" src='/icons/node.png'/>
+                </Tooltip>
+                <Tooltip content="Sequelize">
+                <Avatar radius="md" src='/icons/sequelize.png'/>
+                </Tooltip>
+                <Tooltip content="Postgresql">
+                <Avatar radius="md" src='/icons/postgresql.png'/>
+                </Tooltip>
+                <Tooltip content="Nodemailer">
+                <Avatar radius="md" src='/icons/nodemailer.png'/>
+                </Tooltip>
+                <Tooltip content="GoogleAuth">
+                <Avatar radius="md" src='/icons/googleIcon.jpg'/>
+                </Tooltip>
+          </AvatarGroup>
+        <Button
+          isIconOnly
+          className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
+          radius="full"
+          variant="light"
+          onPress={() => handleLikeClick(8)}
+        >
+          <HeartIcon
+            className={likedStates[8] ? "[&>path]:stroke-transparent" : ""}
+            fill={likedStates[8] ? "currentColor" : "none"}
+            width = {100}
+            height = {100} 
+        />
+        </Button>
+        </CardHeader>
+        
+        <CardBody className="items-center">
+          <div className="relative  col-span-6 md:col-span-4">
+            <video
+              controls
+              height="100%"
+              width="100%"
+            >
+              <source
+                src="/media/logisticaMercantil.webm" 
+                type="video/webm"
+              />
+              Tu navegador no admite el elemento de video.
+            </video>
+          </div>
+        </CardBody>
+      <CardFooter className="flex justify-center">
+              <Link
+                isExternal
+                as={NextLink}
+                className={buttonStyles({ variant: "bordered", radius: "full" })}
+                href={siteConfig.links.discord}
+              >
+                <DiscordIcon />
+              </Link>
+              <Link
+                isExternal
+                as={NextLink}
+                className={buttonStyles({ variant: "bordered", radius: "full" })}
+                href={siteConfig.links.logisticaMercantil}
+              >
+                <GitHubIcon />
+              </Link>
+             
+            </CardFooter>
+  </Card>
+  <Card isPressable className={`w-full max-w-[400px] relative `}
+      
+      >
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+          <p className="text-tiny uppercase font-bold">App Logistica Mercantil</p>  
+          <small className="text-default-500 mt-8">App de integracion de transportadores para la generacion de envios, recogidas, manifiesto de las distintas transportadoras, a su vez hacer seguimiento de los despachos.</small>
+          <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
+          <AvatarGroup max={15} className="grid grid-cols-8  gap-4 justify-center mt-4 mb-4">        
+                <Tooltip content="JavaScript">
+                <Avatar radius="md"  src='/icons/js.png'/>
+                </Tooltip>
+                <Tooltip content="CSS">
+                <Avatar radius="md" src='/icons/css.png'/>
+                </Tooltip>
+                <Tooltip content="HTLM">
+                <Avatar radius="md" src='/icons/HTML.png'/>
+                </Tooltip>
+                <Tooltip content="React">
+                <Avatar radius="md" src='/icons/react.png'/>
+                </Tooltip>
+                <Tooltip content="Redux">
+                <Avatar radius="md" src='/icons/redux.png'/>
+                </Tooltip>
+                <Tooltip content="Chakra UI">
+                <Avatar radius="md" src='/icons/chakra.png'/>
+                </Tooltip>
+                <Tooltip content="Vite" >
+                <Avatar radius="md" src='/icons/vite.png'/>
+                </Tooltip>
+                <Tooltip content="Axios">
+                <Avatar radius="md" src='/icons/axios.png'/>
+                </Tooltip>
+                <Tooltip content="Express">
+                <Avatar radius="md" src='/icons/express.png'/>
+                </Tooltip>
+                <Tooltip content="Node">
+                <Avatar radius="md" src='/icons/node.png'/>
+                </Tooltip>
+                <Tooltip content="Sequelize">
+                <Avatar radius="md" src='/icons/sequelize.png'/>
+                </Tooltip>
+                <Tooltip content="Postgresql">
+                <Avatar radius="md" src='/icons/postgresql.png'/>
+                </Tooltip>
+                <Tooltip content="Nodemailer">
+                <Avatar radius="md" src='/icons/nodemailer.png'/>
+                </Tooltip>
+                <Tooltip content="Leaflet">
+                <Avatar radius="md" src='/icons/leaflet.png'/>
+                </Tooltip>
+                <Tooltip content="GoogleAuth">
+                <Avatar radius="md" src='/icons/googleIcon.jpg'/>
+                </Tooltip>
+          </AvatarGroup>
+        <Button
+          isIconOnly
+          className="text-default-900/60 data-[hover]:bg-foreground/10 absolute top-0 right-0 m-4"
+          radius="full"
+          variant="light"
+          onPress={() => handleLikeClick(7)}
+        >
+          <HeartIcon
+            className={likedStates[7] ? "[&>path]:stroke-transparent" : ""}
+            fill={likedStates[7] ? "currentColor" : "none"}
+            width = {100}
+            height = {100} 
+        />
+        </Button>
+        </CardHeader>
+        
+        <CardBody className="items-center">
+          <div className="relative  col-span-6 md:col-span-4">
+            <video
+              controls
+              height="100%"
+              width="100%"
+            >
+              <source
+                src="/media/agroinsumos.webm"  
+                type="video/webm"
+              />
+              Tu navegador no admite el elemento de video.
+            </video>
+          </div>
+        </CardBody>
+      <CardFooter className="flex justify-center">
+              <Link
+                isExternal
+                as={NextLink}
+                className={buttonStyles({ variant: "bordered", radius: "full" })}
+                href={siteConfig.links.discord}
+              >
+                <DiscordIcon />
+              </Link>
+              <Link
+                isExternal
+                as={NextLink}
+                className={buttonStyles({ variant: "bordered", radius: "full" })}
+                href={siteConfig.links.agroinsumos}
+              >
+                <GitHubIcon />
+              </Link>
+             
+            </CardFooter>
+      </Card>
+ 
+
   <Card isPressable className={`w-full max-w-[400px] relative `}
       
       >

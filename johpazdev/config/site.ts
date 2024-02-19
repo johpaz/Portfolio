@@ -40,6 +40,9 @@ export const siteConfig = {
     rickandmorty:"https://github.com/johpaz/api-pokemon.git",
     profinder:"https://github.com/johpaz/Profinder.git",
     juego:"https://github.com/johpaz/juegonaves.git",
-    artgas:"https://play.google.com/store/apps/details?id=johpaz.monitor"
+    artgas:"https://play.google.com/store/apps/details?id=johpaz.monitor",
+    logisticaMercantil: "https://logisticamercantil.com.co",
+    agroinsumos: "https://github.com/johpaz/agroinsumos.git"
+
     },
 };

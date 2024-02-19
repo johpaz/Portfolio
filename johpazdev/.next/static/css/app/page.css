@@ -1,0 +1,70 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./styles/styles.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/* styles.css */
+
+.styles_card__rFBTC {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .styles_card__rFBTC:hover {
+    background-color: #c2c0c0;
+    color: #080808;
+  }
+  
+  .styles_card-button__Lfkrk {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .styles_card-button__Lfkrk:hover {
+    background-color: #4caf50;
+    color: rgb(70, 69, 69);
+  }
+  /* Estilos CSS */
+.styles_card__rFBTC:focus {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra cuando la tarjeta está seleccionada */
+  border: 2px solid #4CAF50; /* Borde verde cuando la tarjeta está seleccionada */
+}
+
+  
+  @keyframes styles_fadeIn__Q2PUY {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .styles_card-element__HVCR5 {
+    animation: styles_fadeIn__Q2PUY 0.5s ease;
+  }
+  /* styles.module.css */
+
+.styles_hoveredCard__k_Fxq {
+  transform: scale(1.1); /* Escala la tarjeta al 110% cuando el mouse está sobre ella */
+  transition: transform 0.3s ease; /* Agrega una transición suave para la animación */
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./styles/animations.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/* animations.css */
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+      font-size: 16px;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+      font-size: 14px;
+    }
+  }
+  
+  .fadeInLeft {
+    animation: fadeInLeft 0.5s ease forwards;
+  }
+  
