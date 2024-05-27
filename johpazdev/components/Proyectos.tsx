@@ -49,8 +49,8 @@ export default function Proyectos() {
       
       >
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-          <p className="text-tiny uppercase font-bold">App Agroinsumos</p>  
-          <small className="text-default-500 mt-8">App de seguimiento de ordenes de compra en el proceso logistica para el cliente y proceso interno. WorkFlow</small>
+          <p className="text-tiny uppercase font-bold">App Logistica Mercantil</p>  
+          <small className="text-default-500 mt-8">App de integracion de transportadores para la generacion de envios, recogidas, manifiesto de las distintas transportadoras, a su vez hacer seguimiento de los despachos.</small>
           <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
           <AvatarGroup max={15} className="grid grid-cols-8  gap-4 justify-center mt-4 mb-4">        
                 <Tooltip content="JavaScript">
@@ -151,8 +151,8 @@ export default function Proyectos() {
       
       >
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-          <p className="text-tiny uppercase font-bold">App Logistica Mercantil</p>  
-          <small className="text-default-500 mt-8">App de integracion de transportadores para la generacion de envios, recogidas, manifiesto de las distintas transportadoras, a su vez hacer seguimiento de los despachos.</small>
+          <p className="text-tiny uppercase font-bold">App Agroinsumos</p>  
+          <small className="text-default-500 mt-8">App de seguimiento de ordenes de compra en el proceso logistica para el cliente y proceso interno. WorkFlow</small>
           <h4 className="font-bold text-medium">App desarrollada con las siguientes tecnologias:</h4>
           <AvatarGroup max={15} className="grid grid-cols-8  gap-4 justify-center mt-4 mb-4">        
                 <Tooltip content="JavaScript">
