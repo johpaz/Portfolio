@@ -45,7 +45,7 @@ const HomePage = () => {
   ];
 
   return (
-    <Box id="home" minHeight="100vh" width="full" bg={bgColor} margin="1em">
+    <Box id="home" minHeight="100vh" width="full" bg={bgColor } p={4}>
       <Flex
         direction={{ base: 'column', md: 'row' }}
         align="center"
@@ -87,7 +87,7 @@ const HomePage = () => {
             Desarrollador web especializado en [Frontend/Backend/Fullstack]
           </MotionHeading>
           <MotionText
-            fontSize="xl"
+            fontSize="md"
             color={textColor}
             textAlign={['center', 'center', 'left', 'left']}
             initial={{ opacity: 0, x: -50 }}
