@@ -7,6 +7,8 @@ import AboutMe from "./pages/SobreMi"
 import FeaturedProjects from "./pages/Proyectos"
 import Services from "./pages/Servicios"
 import Contacto from "./pages/Contacto"
+import BlogList from "./pages/Blog"
+import BlogDetail from "./pages/Blog"
 
 function App() {
 return (
@@ -18,7 +20,8 @@ return (
        <Route path="/projects" element={<FeaturedProjects/>} />
        <Route path="/services" element={<Services/>} />
        <Route path="/contact" element={<Contacto/>} />
-       contact
+       <Route path="/blog" element={<BlogDetail/>} />
+       
        <Route
           path='*'
           element={<Navigate to='/' />}
