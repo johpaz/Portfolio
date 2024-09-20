@@ -14,6 +14,7 @@ const MotionButton = motion(Button);
 
 const recaptchaKey = import.meta.env.VITE_REACT_APP_RE_CAPTCHA;
 
+const URL_API = import.meta.env.VITE_REACT_APP_URL;
 
 
 
@@ -36,6 +37,32 @@ const validationSchema = Yup.object({
     .required('El número de celular es requerido'),
   message: Yup.string().required('Escribe tu mensaje'),
 });
+
+const sendEmail = async (values, actions) => {
+  if (isHuman) {
+    try {
+      const response = await fetch(`${URL_API}/sendMail`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if(response.ok) {
+        resetform()
+        console.log('Correo enviado con éxito');
+      } else {
+        console.error('Error al enviar el correo. Código de respuesta:', response.status);
+      }
+    
+    } catch (error) {
+      console.error('Error al enviar el correo desde handleSubmit:', error);
+    }
+  } else {
+    console.log('Por favor, confirme que no es un robot.');
+  }
+};
 
   const handleRecaptchaChange = (value) => {
     setRecaptchaValue(value);
@@ -135,6 +162,7 @@ const validationSchema = Yup.object({
                     colorScheme="purple"
                     isLoading={formik.isSubmitting}
                     disabled={!formik.isValid || formik.isSubmitting}
+                    onClick={sendEmail}
                   >
                     Enviar
                   </Button>
