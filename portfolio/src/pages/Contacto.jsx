@@ -12,9 +12,7 @@ const MotionInput = motion(Input);
 const MotionTextarea = motion(Textarea);
 const MotionButton = motion(Button);
 
-const recaptchaKey = import.meta.env.VITE_REACT_APP_RE_CAPTCHA;
 
-const URL_API = import.meta.env.VITE_REACT_APP_URL;
 
 
 
@@ -24,7 +22,10 @@ const Contacto = () => {
   const buttonColor = useColorModeValue('blue', 'teal');
   const [isHuman, setIsHuman] = useState(false);
   const [recaptchaValue, setRecaptchaValue] = useState('');
+  const recaptchaKey = import.meta.env.VITE_REACT_APP_RE_CAPTCHA;
 
+
+  const URL_API = import.meta.env.VITE_REACT_APP_URL;
 // Validación del formulario
 const validationSchema = Yup.object({
   name: Yup.string().required('Tu nombre es requerido'),
