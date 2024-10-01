@@ -131,7 +131,7 @@ const HomePage = () => {
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
-                <Link isExternal href="https://drive.google.com/file/d/1ysWou-6Nshx4UFW8P-Vv79gBIDhzWyok/view?usp=sharing">
+                <Link isExternal href="https://drive.google.com/file/d/15OK163qX2e06ULFRYlcWAD2vebOXA3Ht/view?usp=sharing">
                   <MotionBox
                     p={4}
                     display="flex"
