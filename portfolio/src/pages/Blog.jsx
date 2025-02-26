@@ -34,7 +34,7 @@ const BlogDetail = () => {
   };
 
   return (
-    <Box bg={bgColor} py={8} px={4} maxW="800px" mx="auto">
+    <Box margin="1em" borderRadius="xl" bg={bgColor} py={8} px={4} maxW="800px" mx="auto">
       <Heading as="h1" size="2xl" mb={4} color={textColor}>
         {article.title}
       </Heading>
