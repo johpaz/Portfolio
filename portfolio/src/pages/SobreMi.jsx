@@ -66,7 +66,7 @@ const AboutMe = () => {
               <HStack spacing={4}>
                 <Icon as={FaBriefcase} w={8} h={8} color="green.500" />
                 <Text fontWeight="bold">Experiencia:</Text>
-                <Text fontSize="md">2 años como Desarrollador Web Full Stack</Text>
+                <Text fontSize="md">3 años como Desarrollador Web Full Stack e IA</Text>
               </HStack>
               <HStack spacing={4}>
                 <Icon as={FaCode} w={8} h={8} color="purple.500" />
